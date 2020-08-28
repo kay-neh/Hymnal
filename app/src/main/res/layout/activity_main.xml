@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:fitsSystemWindows="false">
 
-        <fragment
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9"
-            android:id="@+id/my_nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_graph" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav_bar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="bottom"
-            app:itemBackground="?attr/colorSurface"
-            app:itemIconTint="@color/bottom_nav_color"
-            app:itemRippleColor="?attr/colorPrimary"
-            app:itemTextColor="@color/bottom_nav_color"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_nav_menu" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorSurface"
+                android:theme="@style/MyThemeOverlay_Toolbar"
+                app:titleTextColor="?attr/colorOnSurface" />
 
-    </LinearLayout>
+            <fragment
+                android:id="@+id/my_nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_graph" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="bottom"
+                app:itemBackground="?attr/colorSurface"
+                app:itemIconTint="@color/bottom_nav_color"
+                app:itemRippleColor="?attr/colorPrimary"
+                app:itemTextColor="@color/bottom_nav_color"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_nav_menu" />
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemTextColor="@color/colorPrimary"
+            app:menu="@menu/nav_menu_items" />
+<!--            app:headerLayout="@layout/nav_header"-->
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </layout>

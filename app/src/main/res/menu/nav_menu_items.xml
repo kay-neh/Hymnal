@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="All Hymns" />
+    <item android:title="Entrance Hymns" />
+    <item android:title="Offertory Hymns" />
+    <item android:title="Consecration Hymns" />
+    <item android:title="Communion Hymns" />
+    <item android:title="Closing Hymns" />
+    <item android:title="Indegenous Hymns" />
+</menu>

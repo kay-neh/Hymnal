@@ -2,4 +2,5 @@
     <string name="app_name">Hymnal</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dev_acknowledge">This app was developed in Nigeria by : \nDevelopers: Chukwurah Daniel Nonso \n Chukwurah Awele Victor\n ........................................ \nDesigner: Chukwurah Paul Dumebi</string>
 </resources>
