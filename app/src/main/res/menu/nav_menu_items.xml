@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="All Hymns" />
-    <item android:title="Entrance Hymns" />
-    <item android:title="Offertory Hymns" />
-    <item android:title="Consecration Hymns" />
-    <item android:title="Communion Hymns" />
-    <item android:title="Closing Hymns" />
-    <item android:title="Indegenous Hymns" />
+    <item
+        android:id="@+id/allhymnsFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="All Hymns" />
+    <item
+        android:id="@+id/entranceHymnFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Entrance Hymns" />
+    <item
+        android:id="@+id/offertoryHymnsFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Offertory Hymns" />
+    <item
+        android:id="@+id/consecrationHymnsFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Consecration Hymns" />
+    <item
+        android:id="@+id/communionHymnsFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Communion Hymns" />
+    <item
+        android:id="@+id/closingHymnsFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Closing Hymns" />
+    <item
+        android:id="@+id/indegenousHymnFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_dot_icon"
+        android:title="Indegenous Hymns" />
+
 </menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HymnDetailActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurface"
+            app:navigationIcon="@drawable/ic_back"
+            android:theme="@style/MyThemeOverlay_Toolbar"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+        <TextView
+            android:id="@+id/searchable_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hymn details"
+            android:gravity="center" />
+
+    </LinearLayout>
+</layout>

@@ -20,6 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorSurface"
+                app:menu="@menu/menu_items"
                 android:theme="@style/MyThemeOverlay_Toolbar"
                 app:titleTextColor="?attr/colorOnSurface" />
 
@@ -35,7 +36,7 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_nav_bar"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="40dp"
                 android:layout_gravity="bottom"
                 app:itemBackground="?attr/colorSurface"
                 app:itemIconTint="@color/bottom_nav_color"
@@ -48,12 +49,17 @@
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:itemTextColor="@color/colorPrimary"
+            android:background="@drawable/side_color"
+            app:itemIconSize="10dp"
+            app:itemIconTint="@android:color/white"
+            app:itemIconPadding="@dimen/nav_icon_padding"
+            app:itemTextAppearance="@style/TextAppearance.NavItems"
+            app:itemBackground="@drawable/nav_view_background"
+            app:headerLayout="@layout/nav_header"
             app:menu="@menu/nav_menu_items" />
-<!--            app:headerLayout="@layout/nav_header"-->
 
     </androidx.drawerlayout.widget.DrawerLayout>
 

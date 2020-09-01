@@ -3,26 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/hymnsFragment">
+    app:startDestination="@id/allhymnsFragment">
 
     <fragment
-        android:id="@+id/hymnsFragment"
-        android:name="com.example.hymnal.HymnsFragment"
-        android:label="Hymns"
-        tools:layout="@layout/fragment_hymns" />
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.hymnal.SearchFragment"
-        android:label="Search"
-        tools:layout="@layout/fragment_search" />
+        android:id="@+id/allhymnsFragment"
+        android:name="com.example.hymnal.AllHymnsFragment"
+        android:label="All Hymns"
+        tools:layout="@layout/fragment_all_hymns" />
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.example.hymnal.FavouriteFragment"
-        android:label="Favourites"
+        android:label="My Favourites"
         tools:layout="@layout/fragment_favourite" />
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.example.hymnal.ContactFragment"
         android:label="Contact Us"
         tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/entranceHymnFragment"
+        android:name="com.example.hymnal.EntranceHymnFragment"
+        android:label="Entrance Hymns"
+        tools:layout="@layout/fragment_entrance_hymn" />
+    <fragment
+        android:id="@+id/offertoryHymnsFragment"
+        android:name="com.example.hymnal.OffertoryHymnsFragment"
+        android:label="Offertory Hymns"
+        tools:layout="@layout/fragment_offertory_hymns" />
+    <fragment
+        android:id="@+id/consecrationHymnsFragment"
+        android:name="com.example.hymnal.ConsecrationHymnsFragment"
+        android:label="Consecration Hymns"
+        tools:layout="@layout/fragment_consecration_hymns" />
+    <fragment
+        android:id="@+id/communionHymnsFragment"
+        android:name="com.example.hymnal.CommunionHymnsFragment"
+        android:label="Communion Hymns"
+        tools:layout="@layout/fragment_communion_hymns" />
+    <fragment
+        android:id="@+id/closingHymnsFragment"
+        android:name="com.example.hymnal.ClosingHymnsFragment"
+        android:label="Closing Hymns"
+        tools:layout="@layout/fragment_closing_hymns" />
+    <fragment
+        android:id="@+id/indegenousHymnFragment"
+        android:name="com.example.hymnal.IndegenousHymnFragment"
+        android:label="Indegenous Hymns"
+        tools:layout="@layout/fragment_indegenous_hymn" />
 </navigation>

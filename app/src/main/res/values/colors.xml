@@ -6,5 +6,6 @@
 
     <color name="colorInactive">#A9A9A9</color>
     <color name="colorToolbar">#07031A</color>
+    <color name="lightcolorPrimary">#1A1C0221</color>
 
 </resources>

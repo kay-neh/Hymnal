@@ -3,114 +3,121 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ContactFragment">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorToolbar"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp">
+        android:layout_height="match_parent"
+        tools:context=".ContactFragment">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_margin="16dp"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:lineSpacingMultiplier="1.5"
-            android:text="@string/dev_acknowledge" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="5dp"
-        android:text="Name"
-        android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="@string/dev_acknowledge"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/circular_drawable01"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:hint="Name"
-        android:textSize="14sp"
-        android:textColorHint="@color/colorInactive"
-        android:inputType="textCapSentences" />
+            </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="5dp"
-        android:text="Email Address"
-        android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginBottom="5dp"
+                android:text="Name"
+                android:textColor="@android:color/black" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/circular_drawable01"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textSize="14sp"
-        android:hint="Email Address"
-        android:textColorHint="@color/colorInactive"
-        android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circular_drawable01"
+                android:hint="Name"
+                android:inputType="textCapSentences"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/colorInactive"
+                android:textSize="14sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="5dp"
-        android:text="Message"
-        android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:text="Email Address"
+                android:textColor="@android:color/black" />
 
-    <EditText
-        android:id="@+id/message"
-        android:layout_width="match_parent"
-        android:layout_height="182dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:gravity="start"
-        android:background="@drawable/circular_drawable01"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:paddingTop="10dp"
-        android:textSize="14sp"
-        android:hint="Message"
-        android:textColorHint="@color/colorInactive"
-        android:inputType="textCapSentences|textMultiLine" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circular_drawable01"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/colorInactive"
+                android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="38dp"
-        android:textSize="12sp"
-        android:textAllCaps="false"
-        app:backgroundTint="@color/colorToolbar"
-        android:text="Send Message"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:text="Message"
+                android:textColor="@android:color/black" />
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circular_drawable01"
+                android:gravity="start"
+                android:hint="Message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lineSpacingMultiplier="1.25"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:textColorHint="@color/colorInactive"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/sendmessagebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:text="Send Message"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
 </layout>

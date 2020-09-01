@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/splash_icon"
+        android:src="@drawable/splash_img"
         />
 
 </RelativeLayout>
