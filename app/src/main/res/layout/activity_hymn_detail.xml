@@ -15,15 +15,51 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorSurface"
             app:navigationIcon="@drawable/ic_back"
+            app:menu="@menu/hymn_detail_menu"
             android:theme="@style/MyThemeOverlay_Toolbar"
             app:titleTextColor="?attr/colorOnSurface" />
 
-        <TextView
-            android:id="@+id/searchable_textview"
+        <LinearLayout
+            android:id="@+id/chorus_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Chorus :"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/chorus_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingMultiplier="1.5"
+                android:text="Here we are, all together;\nAs we sing our song joyfully;\nHere we are, joined together,\nAs we pray we'll always be."
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hymn_detail_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Hymn details"
-            android:gravity="center" />
+            android:visibility="visible"
+            tools:listitem="@layout/recycler_view_list_item_detail"
+            />
 
     </LinearLayout>
 </layout>

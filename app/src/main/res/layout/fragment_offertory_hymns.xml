@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:visibility="visible"
+            android:visibility="gone"
             android:text="OFFERTORY HYMN"  />
 
 
@@ -22,7 +22,7 @@
             android:id="@+id/hymns_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
+            android:visibility="visible"
             tools:listitem="@layout/recycler_view_list_items"
             />
 
